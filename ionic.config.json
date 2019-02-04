@@ -1,0 +1,7 @@
+{
+  "name": "parking-app-sc",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}

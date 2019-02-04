@@ -1,0 +1,27 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>iPark <ion-icon name="car"></ion-icon></ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+<h1 class="text-center">Register <ion-icon name="person-add"></ion-icon></h1>
+
+      <ion-item>
+          <ion-label floating>Email</ion-label>
+          <ion-input type="text" [(ngModel)]="user.email"> </ion-input>
+      </ion-item>
+
+      <ion-item>
+          <ion-label floating>Password</ion-label>
+          <ion-input type="password" [(ngModel)]="user.password"> </ion-input>
+      </ion-item>
+
+      <button ion-button full style="margin-top:25px" (click)="register(user)">Register</button>
+
+
+</ion-content>
