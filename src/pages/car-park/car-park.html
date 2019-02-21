@@ -7,7 +7,7 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>iPark <ion-icon name="car"></ion-icon></ion-title>
+    <ion-title><ion-icon name="car"></ion-icon>  Car Park List</ion-title>
 
   <ion-buttons end>
       <button ion-button icon-only (click)="signOut()">Logout</button>
@@ -19,5 +19,18 @@
 
 
 <ion-content padding>
-<h1 class="text-center">Register</h1>
+<h1 class="text-center">Car Parks</h1>
+
+<button ion-button full style="margin-top:25px" (click)="navigateToAddCarPark()">Add Car Park</button>
+
+<ion-list>
+  <ion-card *ngFor="let carPark of carParks" (click)="selectCarPark(carPark)">
+    <ion-item>
+      <h2><b>Car Park Name: </b>{{ carPark.carParkName }}</h2>
+      <h2><ion-icon name="car"></ion-icon><b> Location: </b>{{ carPark.carParkLocation }}</h2>
+      <h2><ion-icon name="pin"></ion-icon><b> Capacity: </b>{{ carPark.numSpaces }} </h2>
+    </ion-item>
+  </ion-card>
+</ion-list>
+
 </ion-content>

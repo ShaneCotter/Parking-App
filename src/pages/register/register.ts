@@ -3,6 +3,7 @@ import { IonicPage, NavController, NavParams, ToastController } from 'ionic-angu
 import { User } from '../../models/user';
 import { AngularFireAuth } from 'angularfire2/auth';
 
+
 @IonicPage()
 @Component({
   selector: 'page-register',
